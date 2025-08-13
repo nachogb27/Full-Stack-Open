@@ -9,7 +9,7 @@ if (process.argv.length < 3) {
 const password = process.argv[2]
 
 // Reemplaza 'yourpassword' con tu contraseña real y la URL con tu cluster
-const url = `mongodb+srv://nachogb:bisite@cluster0.u9gzjtv.mongodb.net/`
+const url = MONGO_DB_URI;
 
 mongoose.set('strictQuery', false)
 mongoose.connect(url)
