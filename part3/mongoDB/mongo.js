@@ -23,6 +23,7 @@ const personSchema = new mongoose.Schema({
 const Person = mongoose.model('Person', personSchema)
 
 // Si solo se proporciona la contraseña, mostrar todas las personas
+
 if (process.argv.length === 3) {
   console.log('phonebook:')
   Person.find({}).then(result => {
